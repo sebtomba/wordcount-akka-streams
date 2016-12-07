@@ -1,0 +1,10 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET     /                       @controllers.MainController.index
+
+# Word count endpoints
+POST    /wordcount              @controllers.MainController.countWords
+GET     /wordcount              @controllers.MainController.getWordCounts
+GET     /wordcount/:id          @controllers.MainController.getWordCount(id: String)
